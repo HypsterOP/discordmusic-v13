@@ -1,0 +1,32 @@
+{
+	"name": "discordmusic-v13",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"start": "ts-node-dev --respawn --transpile-only --poll ./src/tests/bot.ts",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint": "eslint src --ext .ts",
+		"lint:fix": "eslint src --ext .ts --fix",
+		"prettier": "prettier --write **/*.{ts,js,json,yml,yaml}",
+		"build": "tsc",
+		"build:check": "tsc --noEmit --incremental false"
+	},
+	"keywords": [
+		"discordmusic",
+		"discord-v13"
+	],
+	"author": "HypsterOP",
+	"license": "ISC",
+	"dependencies": {
+		"@discordjs/voice": "^0.5.6",
+		"discord.js": "^13.0.1",
+		"ts-node": "^10.2.0",
+		"youtube-dl-exec": "^1.2.4",
+		"ytdl-core": "^4.9.1"
+	},
+	"devDependencies": {
+		"ts-node-dev": "^1.1.8",
+		"tsconfig-paths": "^3.10.1",
+		"typedoc": "^0.21.5"
+	}
+}
